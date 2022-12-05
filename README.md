@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: I got the response code 500 from the network tab under developer tools on the browser denoting a server error. On the rails server console, I got a NameError of line 10 of the ToysController denoting a typo. Toys.create was used instead of Toy.create, which I corrected.
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged:  got the response code 204 from the network tab under developer tools on the browser denoting no content in the get request. Apparently, the update action was not rendering back the toy.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: I got the response code 404 from the network tab under developer tools on the browser denoting a missing route. I added the destroy route.
